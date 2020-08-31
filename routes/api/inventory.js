@@ -5,7 +5,7 @@ const {
     createProduct,
     deleteProduct,
     upsertProduct
-} = require('../../data/=inventory');
+} = require('../../data/inventory');
 
 router.get('/', (req, res, next) =>{
     readInventory().then(data => {

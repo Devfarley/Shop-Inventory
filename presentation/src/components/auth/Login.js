@@ -8,7 +8,7 @@ const Login = () => {
         <>
             <h2>Login</h2>
             <Button variant='contained' color='primary' onClick={() => setFollowRedirect(!followRedirect)}>Login</Button>
-            {followRedirect ? <Redirect to='/entities'/>: ''}
+            {followRedirect ? <Redirect to='/products'/>: ''}
         </>
     )
 }

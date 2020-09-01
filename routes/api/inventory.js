@@ -24,8 +24,8 @@ router.put('/:id', (req, res, next) => {
     upsertProduct(id, body).then(data => res.send(data));
 });
 
-router.delete('/', (req, res, next) => {
-    const id = req.body._id
+router.delete('/:id', (req, res, next) => {
+    const id = req.params.id
     deleteProduct(id).then(data => res.send(data));
 });
 

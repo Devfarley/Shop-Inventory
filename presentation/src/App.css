@@ -4,25 +4,98 @@
 
 body{
   background-color: lightcoral;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+
+
+/* Page header */
+
+
+.dark-background {
+  background-color: #222;
+  color: white;
+  font-weight: 400;
+}
+
+.dark-background h2{
+  letter-spacing: 3px;
+  font-family: 'Bangers', cursive;
+  font-size: 5rem;
+}
+
+.form-groupheader{
+  width: 10%;
+  margin-left: 45%;
+  margin-right: 45%;
 }
 /* Product Cards */
 
-.container{
-  margin-top: 40px;
-  width: 100%;
-  justify-content: center;
+.cardcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 2rem;
+  margin-right: 14rem;
+  margin-left: 14rem;
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  padding: .5rem;
-  margin: .9rem;
-  display: inline-block;
+  padding: .4rem;
+  margin: .4rem;
   box-shadow: 6px 6px 10px black;
   border-radius: .5em;
 }
 
 .card button{
-  margin: .5rem;
+  margin-bottom: .2rem;
+}
+
+/* Product Update Form */
+
+.updateProductForm input, textarea{
+width: 250px;
+margin: 5px;
+}
+
+/* Nav Bar */
+nav{
+  background-color: white;
+}
+
+.nav-item a{
+  font-weight:700;
+  text-decoration: none;
+  color: #222;
+}
+
+.nav-item a:hover{
+  font-weight:700;
+  text-decoration: none;
+  color: #3ab5fe;
+}
+
+.nav-item{
+  margin-top: 20px;
+  padding: .5rem;
+}
+
+/* footer */
+
+footer{
+  margin-top: 4rem;
+}
+
+.footer-social-links a{
+  color: white;
+}
+
+.footer-social-links a:hover{
+  color: #3ab5fe;
+}
+
+.footer-logo{
+  font-weight: 700;
 }

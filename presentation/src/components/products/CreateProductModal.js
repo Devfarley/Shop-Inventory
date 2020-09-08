@@ -3,7 +3,7 @@ import {Modal, Button} from 'react-bootstrap'
 import {useState} from 'react'
 import CreateProductForm from './CreateProductForm';
 
-function CreateProductModal (){
+function CreateProductModal (props){
  
     
 
@@ -15,7 +15,7 @@ function CreateProductModal (){
 
     return(
         <>
-        <Button variant="primary" onClick={handleShow}>
+        <Button variant="primary" style={{marginTop: 30, marginBottom: 10}} onClick={handleShow}>
             Add Product
         </Button>
     
@@ -24,7 +24,7 @@ function CreateProductModal (){
             <Modal.Title>Add New Product</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <CreateProductForm handleClose={handleClose}/>
+            <CreateProductForm handleClose={handleClose} refresh={props.refresh}/>
             </Modal.Body>
             
         </Modal>

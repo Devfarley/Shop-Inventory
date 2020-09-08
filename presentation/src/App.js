@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <Router>
         <Nav/>
-        <hr/>
         <Routes/>
       </Router>
     </div>

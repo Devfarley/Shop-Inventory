@@ -12,8 +12,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            
-            <footer className="dark-background py-5 fixed-bottom">
+            <h2>New Additions</h2>
+            <img src="https://www.jelly.deals/wp-content/uploads/2016/07/Funko-Pops.jpg" alt="" width="1800"/>
+            <footer className="dark-background py-5 ">
                 <div>
                     <div>
                     <div className="col-sm">

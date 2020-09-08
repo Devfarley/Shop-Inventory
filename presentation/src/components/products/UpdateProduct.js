@@ -7,7 +7,7 @@ class UpdateProduct extends React.Component {
             name: this.props.products.name,
             description: this.props.products.description,
             quantity: this.props.products.quantity,
-            isActive: true,
+            isActive: this.props.products.isActive,
             img: this.props.products.img,
             price: this.props.products.price
         }
@@ -18,6 +18,12 @@ class UpdateProduct extends React.Component {
         });
     }
     
+    handleClick = (event) => {
+        this.setState({
+            [event.target.name]: !this.props.products.isActive
+        });
+    }
+
     handleSubmit = (event) => {
         event.preventDefault();
         const {...data} = this.state
@@ -41,6 +47,8 @@ class UpdateProduct extends React.Component {
                     <input type="text" name="img" placeholder="Img Url" value={this.state.img} onChange={this.handleChange}/>
                     <input type="text" name="price" placeholder="Product Price" value={this.state.price} onChange={this.handleChange}/>
                     <input type="text" name="quantity" placeholder="Product Quantity" value={this.state.quantity} onChange={this.handleChange}/>
+                    <label>Check box to change is Active</label>
+                    <input type="checkbox" name="isActive" placeholder="Product isActive" value={this.state.isActive} onClick={this.handleClick}/> 
                     <input type="submit" value="Save Changes" />
                 </form>
             </div>

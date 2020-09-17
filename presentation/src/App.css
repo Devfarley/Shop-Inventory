@@ -9,7 +9,10 @@ body{
   overflow-x: hidden;
 }
 
-
+h2{
+  padding-top: .5em;
+  font-weight: 700;
+}
 
 /* Page header */
 
@@ -59,6 +62,7 @@ body{
 width: 250px;
 margin: 5px;
 }
+
 
 /* Nav Bar */
 nav{

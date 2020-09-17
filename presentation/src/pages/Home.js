@@ -1,4 +1,5 @@
 import React from 'react'
+import NewAdditions from '../components/products/NewAdditions';
 
 const Home = () => {
     return( 
@@ -13,7 +14,7 @@ const Home = () => {
                 </div>
             </section>
             <h2>New Additions</h2>
-            <img src="https://www.jelly.deals/wp-content/uploads/2016/07/Funko-Pops.jpg" alt="" width="1800"/>
+            <NewAdditions/>
             <footer className="dark-background py-5 ">
                 <div>
                     <div>

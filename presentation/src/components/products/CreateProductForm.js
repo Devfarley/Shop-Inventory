@@ -10,7 +10,8 @@ class CreateProductForm extends React.Component{
             quantity: "",
             isActive: true,
             img: "",
-            price: ""
+            price: "",
+            date: new Date()
         }
     }
     handleChange = (event) => {
@@ -73,6 +74,7 @@ class CreateProductForm extends React.Component{
                         onChange={this.handleChange}
                         aria-label="Default"
                         aria-describedby="inputGroup-sizing-default"
+                        placeholder="Img size must be 1000 x 1000"
                     />
                 </InputGroup>
                 <InputGroup className="mb-3">

@@ -47,8 +47,11 @@ class UpdateProduct extends React.Component {
                     <input type="text" name="img" placeholder="Img Url" value={this.state.img} onChange={this.handleChange}/>
                     <input type="text" name="price" placeholder="Product Price" value={this.state.price} onChange={this.handleChange}/>
                     <input type="text" name="quantity" placeholder="Product Quantity" value={this.state.quantity} onChange={this.handleChange}/>
-                    <label>Check box to change is Active</label>
-                    <input type="checkbox" name="isActive" placeholder="Product isActive" value={this.state.isActive} onClick={this.handleClick}/> 
+                    <label>Click button to change is Active</label>
+                    <br></br>
+                    <button type="button" className={this.state.isActive ? "btn btn-success" : "btn btn-danger"} 
+                    name="isActive" placeholder="Product isActive" value={this.state.isActive} onClick={this.handleClick}>{this.state.isActive.toString()}
+                    </button>
                     <input type="submit" value="Save Changes" />
                 </form>
             </div>

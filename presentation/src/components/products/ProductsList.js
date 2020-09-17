@@ -61,11 +61,11 @@ class ProductsList extends React.Component {
        
         for (let i = 1; i < array.length; i++) {
             let currentIndex = i
-            
+            // converting strings to numbers to compare them
           while (currentIndex > 0 && Number(array[currentIndex - 1].quantity) > Number(array[currentIndex].quantity )) {
             // Checking if the value at a certain index is bigger than the value at the index after it.
             let temp = array[currentIndex]
-            
+            // holding value while they are switched in their index positions
             array[currentIndex] = array[currentIndex - 1]
             
             array[currentIndex - 1] = temp

@@ -52,6 +52,7 @@ class UpdateProduct extends React.Component {
                     <button type="button" className={this.state.isActive ? "btn btn-success" : "btn btn-danger"} 
                     name="isActive" placeholder="Product isActive" value={this.state.isActive} onClick={this.handleClick}>{this.state.isActive.toString()}
                     </button>
+                    <br></br>
                     <input type="submit" value="Save Changes" />
                 </form>
             </div>

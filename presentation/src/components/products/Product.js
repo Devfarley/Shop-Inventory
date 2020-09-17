@@ -12,8 +12,8 @@ function Product ({inventory, refresh}) {
     // const displayProduct = inventory.products.map(ele => )
  
     return(
-        <div className="card" style={{width: 350}}>
-            <img className="card-img-top" src={`${inventory.img}`} alt={inventory.description} height="300"  />
+        <div className="card" >
+            <img className="card-img-top" src={`${inventory.img}`} alt={inventory.description}/>
                 <div className="card-body">
                     <h5 className="card-title">{inventory.name}</h5>
                     <p className="card-text">{inventory.description}</p>
